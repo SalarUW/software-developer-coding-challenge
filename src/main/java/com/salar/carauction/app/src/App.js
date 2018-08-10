@@ -85,7 +85,7 @@ class App extends Component {
             Make A New Bid!
             <Form onSubmit={this.handleBidSubmit}>
               <FormGroup>
-                <Label for="username">Task</Label>
+                <Label for="username">Username</Label>
                 <Input type="text" name="username" id="username" value={currentBid.username || ''} onChange={this.handleChange} autoComplete="name"/>
               </FormGroup>
               <FormGroup>
@@ -106,7 +106,7 @@ class App extends Component {
           <ol>
           {bids.map(bid =>
             <li key={bid.id}>
-            {bid.amount} and {bid.username}
+            {bid.username} bid ${bid.amount}
             </li>
           )}
           </ol>
