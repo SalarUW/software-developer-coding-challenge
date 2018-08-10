@@ -1,16 +1,25 @@
 # Software Developer Coding Challenge
 
-This is a coding challenge for software developer applicants applying through http://work.traderev.com/
+This is a car auction system with the following requirements. In order to run the app, first fire up the backend using Spring in the main directory:
+```
+mvn spring-boot:run
+```
+After that start the backend using the following command in /src/main/java/com/salar/carauction/app/:
+```
+npm start
+```
+
+The frontend starts at localhost:3000.
 
 ## Goal:
 
 #### You have been tasked with building a simple online car auction system which will allow users to bid on cars for sale and with the following funcitionalies: 
 
-  - [ ] Fork this repo. Keep it public until we have been able to review it.
-  - [ ] A simple auction bidding system
-  - [ ] Record a user's bid on a car
-  - [ ] Get the current winning bid for a car
-  - [ ] Get a car's bidding history 
+  - [X] Fork this repo. Keep it public until we have been able to review it.
+  - [X] A simple auction bidding system
+  - [X] Record a user's bid on a car
+  - [X] Get the current winning bid for a car
+  - [X] Get a car's bidding history 
 
  ### Bonus:
 
