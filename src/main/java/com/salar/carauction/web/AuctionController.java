@@ -24,6 +24,7 @@ public class AuctionController {
     @PostMapping(consumes = "application/json", produces = "application/json")
     public void makeBid(@RequestBody Bid bid) {
         String carName = bid.getCarName();
+        System.out.println(carName + "\n");
         Car car = repository.findByName(carName);
         car.addBid(bid);
         repository.save(car);
